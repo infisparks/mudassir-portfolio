@@ -326,6 +326,19 @@
         -moz-osx-font-smoothing: grayscale !important;
         text-rendering: optimizeLegibility !important;
       }
+      .cv-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 16px !important;
+      }
+      .cv-left-col {
+        width: 35% !important;
+        flex-shrink: 0 !important;
+      }
+      .cv-right-col {
+        width: 65% !important;
+        flex-grow: 1 !important;
+      }
       .cv-no-print {
         display: none !important;
       }
@@ -889,9 +902,9 @@
             </div>
 
             <!-- Pillar 3 -->
-            <div class="bg-zinc-900/80 hover:bg-zinc-850 border border-zinc-800/90 hover:border-sky-500/40 p-3.5 rounded-2xl space-y-2 transition-all flex flex-col justify-between shadow-sm">
+            <div class="bg-zinc-900/80 hover:bg-zinc-850 border border-zinc-800/90 hover:border-amber-500/40 p-3.5 rounded-2xl space-y-2 transition-all flex flex-col justify-between shadow-sm">
               <div class="space-y-1.5">
-                <div class="w-8 h-8 rounded-xl bg-sky-500/10 border border-sky-500/30 text-sky-400 flex items-center justify-center text-xs">
+                <div class="w-8 h-8 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xs">
                   <i class="fa-solid fa-robot"></i>
                 </div>
                 <h4 class="text-xs font-black text-white">Automation &amp; Reverse Eng.</h4>
@@ -899,16 +912,16 @@
                   Custom automated scrapers, workflow bots, and Smali bytecode patching for specialized mobile builds.
                 </p>
               </div>
-              <div class="flex flex-wrap gap-1 text-[8.5px] font-mono text-sky-300/90 pt-1">
+              <div class="flex flex-wrap gap-1 text-[8.5px] font-mono text-amber-300/90 pt-1">
                 <span class="bg-zinc-950 px-1.5 py-0.5 rounded border border-zinc-800">Web Automation</span>
                 <span class="bg-zinc-950 px-1.5 py-0.5 rounded border border-zinc-800">Smali Bytecode</span>
               </div>
             </div>
 
             <!-- Pillar 4 -->
-            <div class="bg-zinc-900/80 hover:bg-zinc-850 border border-zinc-800/90 hover:border-purple-500/40 p-3.5 rounded-2xl space-y-2 transition-all flex flex-col justify-between shadow-sm">
+            <div class="bg-zinc-900/80 hover:bg-zinc-850 border border-zinc-800/90 hover:border-emerald-500/40 p-3.5 rounded-2xl space-y-2 transition-all flex flex-col justify-between shadow-sm">
               <div class="space-y-1.5">
-                <div class="w-8 h-8 rounded-xl bg-purple-500/10 border border-purple-500/30 text-purple-400 flex items-center justify-center text-xs">
+                <div class="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-xs">
                   <i class="fa-solid fa-wand-magic-sparkles"></i>
                 </div>
                 <h4 class="text-xs font-black text-white">Responsive UX &amp; Design</h4>
@@ -916,7 +929,7 @@
                   Sub-second page speeds, seamless multi-device adaptation, and conversion-engineered branding.
                 </p>
               </div>
-              <div class="flex flex-wrap gap-1 text-[8.5px] font-mono text-purple-300/90 pt-1">
+              <div class="flex flex-wrap gap-1 text-[8.5px] font-mono text-emerald-300/90 pt-1">
                 <span class="bg-zinc-950 px-1.5 py-0.5 rounded border border-zinc-800">Tailwind CSS</span>
                 <span class="bg-zinc-950 px-1.5 py-0.5 rounded border border-zinc-800">Core Vitals</span>
               </div>
@@ -1038,12 +1051,12 @@
                   class="w-full h-44 sm:h-52 object-contain bg-[#07070a] p-1.5 group-hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
                 />
-                <div class="absolute top-2 right-2 bg-black/80 backdrop-blur-sm border border-sky-500/30 text-sky-300 font-black text-[9px] px-2 py-0.5 rounded-md shadow">
+                <div class="absolute top-2 right-2 bg-black/80 backdrop-blur-sm border border-amber-500/30 text-amber-300 font-black text-[9px] px-2 py-0.5 rounded-md shadow">
                   4 Views
                 </div>
                 <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-2.5 flex items-center justify-between">
                   <span class="text-[10px] font-bold text-slate-200 flex items-center gap-1.5">
-                    <i class="fa-solid fa-expand text-sky-400 text-xs"></i> Click to Zoom
+                    <i class="fa-solid fa-expand text-amber-400 text-xs"></i> Click to Zoom
                   </span>
                   <span class="text-[9px] text-slate-400 font-mono">OPD System</span>
                 </div>
@@ -1051,20 +1064,20 @@
 
               <!-- Thumbnails Row (Uncropped Previews) -->
               <div class="grid grid-cols-3 gap-1.5">
-                <div class="rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950 h-12 flex items-center justify-center p-1 cursor-pointer hover:border-sky-400 transition-colors" onclick="openLightbox('./image/opdsoftware/opd1.png', 'Infiplus OPD Appointment Calendar')">
+                <div class="rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950 h-12 flex items-center justify-center p-1 cursor-pointer hover:border-amber-400 transition-colors" onclick="openLightbox('./image/opdsoftware/opd1.png', 'Infiplus OPD Appointment Calendar')">
                   <img src="./image/opdsoftware/opd1.png" alt="OPD 1" class="max-h-full max-w-full object-contain" loading="lazy" />
                 </div>
-                <div class="rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950 h-12 flex items-center justify-center p-1 cursor-pointer hover:border-sky-400 transition-colors" onclick="openLightbox('./image/opdsoftware/opd2.png', 'Infiplus OPD Prescription Generator')">
+                <div class="rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950 h-12 flex items-center justify-center p-1 cursor-pointer hover:border-amber-400 transition-colors" onclick="openLightbox('./image/opdsoftware/opd2.png', 'Infiplus OPD Prescription Generator')">
                   <img src="./image/opdsoftware/opd2.png" alt="OPD 2" class="max-h-full max-w-full object-contain" loading="lazy" />
                 </div>
-                <div class="rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950 h-12 flex items-center justify-center p-1 cursor-pointer hover:border-sky-400 transition-colors" onclick="openLightbox('./image/opdsoftware/opd3.png', 'Infiplus OPD Patient Billing & History')">
+                <div class="rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950 h-12 flex items-center justify-center p-1 cursor-pointer hover:border-amber-400 transition-colors" onclick="openLightbox('./image/opdsoftware/opd3.png', 'Infiplus OPD Patient Billing & History')">
                   <img src="./image/opdsoftware/opd3.png" alt="OPD 3" class="max-h-full max-w-full object-contain" loading="lazy" />
                 </div>
               </div>
 
               <div>
                 <h3 class="text-base font-black text-white">Infiplus OPD</h3>
-                <p class="text-xs text-sky-400 font-bold">Complete OPD &amp; Practice Management</p>
+                <p class="text-xs text-amber-400 font-bold">Complete OPD &amp; Practice Management</p>
               </div>
               <p class="text-xs text-slate-300 leading-relaxed">
                 Streamline daily clinic operations for doctors:
@@ -1086,7 +1099,7 @@
             </div>
 
             <div class="pt-2 border-t border-zinc-800/80">
-              <a href="https://infiplus.in/" target="_blank" class="w-full bg-zinc-900 hover:bg-zinc-850 border border-zinc-700 hover:border-sky-400 text-slate-200 font-bold py-2.5 px-3 rounded-xl text-xs text-center flex items-center justify-center space-x-1.5 transition-colors shadow">
+              <a href="https://infiplus.in/" target="_blank" class="w-full bg-zinc-900 hover:bg-zinc-850 border border-zinc-700 hover:border-amber-400 text-slate-200 font-bold py-2.5 px-3 rounded-xl text-xs text-center flex items-center justify-center space-x-1.5 transition-colors shadow">
                 <span>Explore Infiplus OPD</span>
                 <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
               </a>
@@ -1428,7 +1441,7 @@
               <p class="text-[10px] text-slate-400 leading-tight">Proctology center management software.</p>
             </div>
             <div class="pt-2 mt-1 border-t border-zinc-900 flex items-center justify-between text-[9px] text-slate-500">
-              <span class="text-sky-400 font-mono">Healthcare</span>
+              <span class="text-emerald-400 font-mono">Healthcare</span>
               <span class="text-emerald-400 font-bold">● Active</span>
             </div>
           </div>
@@ -1658,7 +1671,7 @@
               <p class="text-[10px] text-slate-400 leading-tight">Medical records &amp; pharmacy management.</p>
             </div>
             <div class="pt-2 mt-1 border-t border-zinc-900 flex items-center justify-between text-[9px] text-slate-500">
-              <span class="text-sky-400 font-mono">MedTech</span>
+              <span class="text-emerald-400 font-mono">MedTech</span>
               <span class="text-emerald-400 font-bold">● Live</span>
             </div>
           </a>
@@ -1724,7 +1737,7 @@
               <p class="text-[10px] text-slate-400 leading-tight">Diagnostics &amp; healthcare automation.</p>
             </div>
             <div class="pt-2 mt-1 border-t border-zinc-900 flex items-center justify-between text-[9px] text-slate-500">
-              <span class="text-sky-400 font-mono">Diagnostics</span>
+              <span class="text-emerald-400 font-mono">Diagnostics</span>
               <span class="text-emerald-400 font-bold">● Active</span>
             </div>
           </div>
@@ -1873,7 +1886,7 @@
               <p class="text-[10px] text-slate-400 leading-tight">Real-time messaging platform &amp; community app.</p>
             </div>
             <div class="pt-2 mt-1 border-t border-zinc-900 flex items-center justify-between text-[9px] text-slate-500">
-              <span class="text-sky-400 font-mono">Social Chat</span>
+              <span class="text-amber-400 font-mono">Social Chat</span>
               <span class="text-emerald-400 font-bold">● Live</span>
             </div>
           </a>
@@ -2055,7 +2068,7 @@
           <!-- Category 2: Academic & Innovation Projects -->
           <div class="bg-zinc-950/90 border border-zinc-800 rounded-3xl p-4 sm:p-5 space-y-3 shadow-lg flex flex-col justify-between">
             <div class="space-y-3">
-              <div class="flex items-center space-x-2 text-sky-400">
+              <div class="flex items-center space-x-2 text-amber-400">
                 <i class="fa-solid fa-graduation-cap text-sm"></i>
                 <h3 class="text-sm font-black text-white">Innovation Projects (AIKTC)</h3>
               </div>
@@ -2063,43 +2076,43 @@
               <div class="space-y-2.5 text-xs">
                 
                 <!-- Smart Study -->
-                <a href="https://mkmods472.blogspot.com/2023/11/smart-study.html" target="_blank" class="block p-2.5 rounded-2xl bg-zinc-900/90 hover:bg-zinc-850 border border-zinc-800 hover:border-sky-400 transition-all group">
+                <a href="https://mkmods472.blogspot.com/2023/11/smart-study.html" target="_blank" class="block p-2.5 rounded-2xl bg-zinc-900/90 hover:bg-zinc-850 border border-zinc-800 hover:border-amber-400 transition-all group">
                   <div class="flex items-center gap-2.5 mb-1.5">
                     <img src="./image/Innovation_Projects_AIKTC/smartstudy.png" alt="Smart Study App Screenshot" class="w-10 h-10 rounded-xl object-contain bg-zinc-950 p-0.5 border border-zinc-700/80 flex-shrink-0" loading="lazy" />
                     <div>
-                      <div class="flex items-center justify-between text-white font-bold text-xs group-hover:text-sky-400 transition-colors">
+                      <div class="flex items-center justify-between text-white font-bold text-xs group-hover:text-amber-400 transition-colors">
                         <span>Smart Study App</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-sky-400 ml-1"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-amber-400 ml-1"></i>
                       </div>
-                      <span class="text-[9px] text-sky-400 font-mono">Academic Utility</span>
+                      <span class="text-[9px] text-amber-400 font-mono">Academic Utility</span>
                     </div>
                   </div>
                   <p class="text-[10px] text-slate-400 leading-tight">Timetable and notes management with PYQ, UT papers &amp; attendance.</p>
                 </a>
 
                 <!-- My Cloud -->
-                <a href="https://mkmods472.blogspot.com/2023/08/my-cloud.html" target="_blank" class="block p-2.5 rounded-2xl bg-zinc-900/90 hover:bg-zinc-850 border border-zinc-800 hover:border-sky-400 transition-all group">
+                <a href="https://mkmods472.blogspot.com/2023/08/my-cloud.html" target="_blank" class="block p-2.5 rounded-2xl bg-zinc-900/90 hover:bg-zinc-850 border border-zinc-800 hover:border-amber-400 transition-all group">
                   <div class="flex items-center gap-2.5 mb-1.5">
                     <img src="./image/Innovation_Projects_AIKTC/mycloud.png" alt="My Cloud Social Platform" class="w-10 h-10 rounded-xl object-contain bg-zinc-950 p-0.5 border border-zinc-700/80 flex-shrink-0" loading="lazy" />
                     <div>
-                      <div class="flex items-center justify-between text-white font-bold text-xs group-hover:text-sky-400 transition-colors">
+                      <div class="flex items-center justify-between text-white font-bold text-xs group-hover:text-amber-400 transition-colors">
                         <span>My Cloud Platform</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-sky-400 ml-1"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-amber-400 ml-1"></i>
                       </div>
-                      <span class="text-[9px] text-sky-400 font-mono">Semester 1 Build</span>
+                      <span class="text-[9px] text-amber-400 font-mono">Semester 1 Build</span>
                     </div>
                   </div>
                   <p class="text-[10px] text-slate-400 leading-tight">Full-stack social networking &amp; cloud storage platform built during college.</p>
                 </a>
 
                 <!-- Virtual Lab -->
-                <a href="https://virtual-genetics-lab.vercel.app/" target="_blank" class="block p-2.5 rounded-2xl bg-zinc-900/90 hover:bg-zinc-850 border border-zinc-800 hover:border-sky-400 transition-all group">
+                <a href="https://virtual-genetics-lab.vercel.app/" target="_blank" class="block p-2.5 rounded-2xl bg-zinc-900/90 hover:bg-zinc-850 border border-zinc-800 hover:border-amber-400 transition-all group">
                   <div class="flex items-center gap-2.5 mb-1.5">
                     <img src="./image/labsoftware/1.png" alt="Virtual Genetics Lab" class="w-10 h-10 rounded-xl object-contain bg-zinc-950 p-0.5 border border-zinc-700/80 flex-shrink-0" loading="lazy" />
                     <div>
-                      <div class="flex items-center justify-between text-white font-bold text-xs group-hover:text-sky-400 transition-colors">
+                      <div class="flex items-center justify-between text-white font-bold text-xs group-hover:text-amber-400 transition-colors">
                         <span>Virtual Genetics Lab</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-sky-400 ml-1"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-amber-400 ml-1"></i>
                       </div>
                       <span class="text-[9px] text-emerald-400 font-mono">Live Interactive</span>
                     </div>
@@ -2145,7 +2158,7 @@
                         <span>ChatPie Messaging</span>
                         <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-emerald-400 ml-1"></i>
                       </div>
-                      <span class="text-[9px] text-sky-400 font-mono">Community Chat</span>
+                      <span class="text-[9px] text-emerald-400 font-mono">Community Chat</span>
                     </div>
                   </div>
                   <p class="text-[10px] text-slate-400 leading-tight">Real-time chat platform for local community engagement.</p>
@@ -2329,64 +2342,75 @@
         </div>
       </div>
 
+      <!-- Vector Sharpness Notification Banner -->
+      <div class="cv-toolbar bg-amber-500/10 border-b border-amber-500/20 px-3 py-1.5 text-center text-[11px] text-amber-300 font-medium">
+        💡 <span class="font-bold">Zero-Blur Guarantee:</span> Click <span class="font-bold underline text-amber-200">"Save / Print A4 PDF"</span> and choose destination <span class="font-bold underline text-amber-200">"Save as PDF"</span> for 100% crisp vector text at any zoom level.
+      </div>
+
       <!-- CV Paper Viewer Body (Soft Neutral Slate Backdrop) -->
       <div class="cv-scroll-body overflow-y-auto bg-[#e2e8f0]/70 p-2 sm:p-6 md:p-8 flex justify-center">
         
-        <!-- A4 Printable Sheet (Executive Level Technical Layout) -->
-        <div id="printableCvArea" class="bg-white w-full max-w-[820px] shadow-lg sm:border border-slate-300 rounded-none sm:rounded-xl p-6 sm:p-9 md:p-11 space-y-5 text-[#0f172a] selection:bg-amber-100 selection:text-amber-950" style="font-family: 'Inter', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
+        <!-- A4 Printable Sheet (Modern Executive Two-Column Architecture) -->
+        <div id="printableCvArea" class="bg-white w-full max-w-[840px] shadow-2xl sm:border border-slate-300 rounded-none sm:rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 text-[#0f172a] selection:bg-amber-100 selection:text-amber-950" style="font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
           
-          <!-- CV Header (Executive Identity & Contact Matrix) -->
-          <div class="border-b-2 border-slate-900 pb-5 space-y-3 cv-item-break">
+          <!-- CV Header (Executive Identity, Title & Comprehensive Contact Grid) -->
+          <div class="border-b-2 border-slate-900 pb-4 space-y-3 cv-item-break">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div class="space-y-1">
-                <div class="flex items-center gap-3">
+              <div class="space-y-1.5 flex-1">
+                <div class="flex flex-wrap items-center gap-2.5">
                   <h1 class="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight uppercase">Shaikh Mudassir</h1>
-                  <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-slate-950 text-amber-400 border border-slate-800 font-mono">
-                    CTO
+                  <span class="px-2.5 py-0.5 rounded-md text-[11px] font-black uppercase tracking-wider bg-slate-950 text-amber-400 border border-slate-800 font-mono shadow-sm">
+                    CTO • TECH ARCHITECT
                   </span>
                 </div>
                 <p class="text-xs sm:text-sm font-bold text-amber-700 tracking-wider uppercase">
                   Chief Technology Officer (CTO) • Full-Stack Engineer &amp; Product Architect
                 </p>
-                <p class="text-[12px] text-slate-600 font-medium">
-                  Enterprise Distributed Systems • Healthcare SaaS Suites (Infiplus HMS/OPD) • Dalvik Reverse Engineering
-                </p>
+                <div class="flex flex-wrap items-center gap-2 pt-0.5">
+                  <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10.5px] font-bold bg-slate-100 text-slate-800 border border-slate-200">
+                    <i class="fa-solid fa-hospital text-amber-600 text-[10px]"></i> 24+ Live Healthcare Deployments
+                  </span>
+                  <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10.5px] font-bold bg-slate-100 text-slate-800 border border-slate-200">
+                    <i class="fa-solid fa-shield-halved text-amber-600 text-[10px]"></i> HIPAA / Multi-Tenant RLS
+                  </span>
+                  <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10.5px] font-bold bg-slate-100 text-slate-800 border border-slate-200">
+                    <i class="fa-solid fa-trophy text-amber-600 text-[10px]"></i> Award-Winning Leader
+                  </span>
+                </div>
               </div>
 
               <!-- Executive Avatar -->
-              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border-2 border-amber-500/80 shadow-md flex-shrink-0 bg-slate-900">
+              <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-amber-500/80 shadow-md flex-shrink-0 bg-slate-900">
                 <img src="./image/profile.png" alt="Shaikh Mudassir" class="w-full h-full object-cover" />
               </div>
             </div>
 
-            <!-- Contact & Verified Online Links -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 pt-1 text-xs text-slate-700 font-medium">
-              <div class="flex items-center gap-1.5">
+            <!-- Contact & Verified Profiles Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 pt-2 border-t border-slate-200 text-xs text-slate-700 font-medium">
+              <div class="flex items-center gap-2">
                 <i class="fa-solid fa-location-dot text-amber-600 w-3.5 text-center"></i>
                 <span>BKC, Mumbai, Maharashtra, India</span>
               </div>
-              <div class="flex items-center gap-1.5">
+              <div class="flex items-center gap-2">
                 <i class="fa-solid fa-phone text-amber-600 w-3.5 text-center"></i>
-                <a href="https://wa.me/919958399157" target="_blank" class="hover:text-amber-600 font-bold">+91 9958399157 (WhatsApp)</a>
+                <a href="https://wa.me/919958399157" target="_blank" class="hover:text-amber-600 font-bold text-slate-900">+91 9958399157 (WhatsApp)</a>
               </div>
-              <div class="flex items-center gap-1.5">
+              <div class="flex items-center gap-2">
                 <i class="fa-solid fa-globe text-amber-600 w-3.5 text-center"></i>
-                <a href="https://mudassir.infispark.in" target="_blank" class="hover:text-amber-600 font-bold">mudassir.infispark.in</a>
+                <a href="https://mudassir.infispark.in" target="_blank" class="hover:text-amber-600 font-bold text-slate-900">mudassir.infispark.in</a>
               </div>
-              <div class="flex items-center gap-1.5">
+              <div class="flex items-center gap-2">
                 <i class="fa-solid fa-building text-amber-600 w-3.5 text-center"></i>
                 <a href="https://infiplus.in" target="_blank" class="hover:text-amber-600">infiplus.in • infispark.in</a>
               </div>
-              <!-- User Requested GitHub Profile -->
-              <div class="flex items-center gap-1.5">
+              <div class="flex items-center gap-2">
                 <i class="fa-brands fa-github text-slate-900 w-3.5 text-center text-sm"></i>
                 <a href="https://github.com/infisparks" target="_blank" rel="noopener noreferrer" class="text-slate-950 hover:text-amber-600 font-bold underline decoration-slate-400 flex items-center gap-1">
                   github.com/infisparks
                   <i class="fa-solid fa-arrow-up-right-from-square text-[8px] text-slate-400"></i>
                 </a>
               </div>
-              <!-- User Requested LinkedIn Profile -->
-              <div class="flex items-center gap-1.5">
+              <div class="flex items-center gap-2">
                 <i class="fa-brands fa-linkedin text-amber-600 w-3.5 text-center text-sm"></i>
                 <a href="https://www.linkedin.com/in/shaikh-mudassir-4a90a6274" target="_blank" rel="noopener noreferrer" class="text-slate-950 hover:text-amber-600 font-bold underline decoration-slate-400 flex items-center gap-1">
                   linkedin.com/in/shaikh-mudassir
@@ -2396,227 +2420,294 @@
             </div>
           </div>
 
-          <!-- Section: Executive Summary -->
-          <div class="space-y-1.5 cv-item-break">
-            <div class="flex items-center gap-2 border-b border-slate-200 pb-1">
-              <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
-              <h2 class="text-xs sm:text-sm font-black text-slate-900 tracking-wider uppercase">Executive Profile</h2>
-            </div>
-            <p class="text-[12.5px] text-slate-700 leading-relaxed text-justify">
-              Results-driven <strong>Chief Technology Officer (CTO)</strong> and <strong>Full-Stack Product Architect</strong> with verified leadership in designing high-velocity cloud software, enterprise healthcare infrastructure, and automated data pipelines. Architected and scaled the <strong>Infiplus Healthcare Suite</strong> (Infiplus HMS, Infiplus OPD, Infiplus Lab), powering <strong>24+ live institutional healthcare deployments</strong> across hospitals, clinics, and diagnostic centers. Deep technical mastery in Next.js, React, Supabase, PostgreSQL, Node.js, and Docker, complemented by advanced capabilities in low-level Android reverse engineering (Smali/DEX) and web automation. Recognized internationally with honors at Taj Exotica Dubai and The Taj Hotel Mumbai for technical leadership.
-            </p>
-          </div>
-
-          <!-- Section: Core Technical Competencies (4 Structured Quadrants) -->
-          <div class="space-y-2 cv-item-break">
-            <div class="flex items-center gap-2 border-b border-slate-200 pb-1">
-              <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
-              <h2 class="text-xs sm:text-sm font-black text-slate-900 tracking-wider uppercase">Core Technical Expertise</h2>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
-              <div class="bg-slate-50 border border-slate-200 p-2.5 rounded-lg space-y-1">
-                <div class="font-bold text-slate-900 flex items-center gap-1.5">
-                  <i class="fa-solid fa-code text-amber-600"></i>
-                  <span>Full-Stack &amp; Web Architecture</span>
+          <!-- Two-Column Architecture Grid (Sidebar 35% | Main 65%) -->
+          <div class="cv-grid flex flex-col md:flex-row gap-5 pt-1">
+            
+            <!-- LEFT SIDEBAR (Technical Mastery, Metrics, Education, Awards) -->
+            <div class="cv-left-col w-full md:w-[35%] space-y-4 flex-shrink-0">
+              
+              <!-- Technical Mastery -->
+              <div class="space-y-2 cv-item-break">
+                <div class="flex items-center gap-2 border-b border-slate-300 pb-1">
+                  <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
+                  <h2 class="text-xs font-black text-slate-900 tracking-wider uppercase">Technical Mastery</h2>
                 </div>
-                <p class="text-[11.5px] text-slate-600 leading-snug">
-                  Next.js 14/15 (App Router, Server Components), React, TypeScript, JavaScript (ES6+), Tailwind CSS, Responsive Design, RESTful APIs, State Architecture.
+
+                <div class="space-y-2 text-xs">
+                  <div class="bg-slate-50 border border-slate-200 p-2.5 rounded-lg space-y-1">
+                    <div class="font-bold text-slate-900 flex items-center gap-1.5 text-[11px]">
+                      <i class="fa-solid fa-code text-amber-600"></i>
+                      <span>Full-Stack Architecture</span>
+                    </div>
+                    <div class="flex flex-wrap gap-1 pt-0.5">
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">Next.js 14/15</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">React 19</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">TypeScript</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">Tailwind CSS</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">REST / WebSockets</span>
+                    </div>
+                  </div>
+
+                  <div class="bg-slate-50 border border-slate-200 p-2.5 rounded-lg space-y-1">
+                    <div class="font-bold text-slate-900 flex items-center gap-1.5 text-[11px]">
+                      <i class="fa-solid fa-database text-amber-600"></i>
+                      <span>Database &amp; Security</span>
+                    </div>
+                    <div class="flex flex-wrap gap-1 pt-0.5">
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">Supabase</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">PostgreSQL</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">Row Level Security</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">Node.js</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">HIPAA Compliance</span>
+                    </div>
+                  </div>
+
+                  <div class="bg-slate-50 border border-slate-200 p-2.5 rounded-lg space-y-1">
+                    <div class="font-bold text-slate-900 flex items-center gap-1.5 text-[11px]">
+                      <i class="fa-solid fa-server text-amber-600"></i>
+                      <span>DevOps &amp; Infrastructure</span>
+                    </div>
+                    <div class="flex flex-wrap gap-1 pt-0.5">
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">Docker</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">Ubuntu VPS</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">Nginx Reverse Proxy</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">CI/CD Pipelines</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">Antigravity IDE</span>
+                    </div>
+                  </div>
+
+                  <div class="bg-slate-50 border border-slate-200 p-2.5 rounded-lg space-y-1">
+                    <div class="font-bold text-slate-900 flex items-center gap-1.5 text-[11px]">
+                      <i class="fa-solid fa-shield-halved text-amber-600"></i>
+                      <span>Systems &amp; Reverse Eng</span>
+                    </div>
+                    <div class="flex flex-wrap gap-1 pt-0.5">
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">Smali Bytecode</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">DEX Disassembly</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">APK Auditing</span>
+                      <span class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[10px] font-medium text-slate-700">Playwright Automation</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Engineering Impact Metrics -->
+              <div class="space-y-2 cv-item-break">
+                <div class="flex items-center gap-2 border-b border-slate-300 pb-1">
+                  <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
+                  <h2 class="text-xs font-black text-slate-900 tracking-wider uppercase">Key Impact</h2>
+                </div>
+                <div class="grid grid-cols-2 gap-2 text-center">
+                  <div class="bg-slate-50 border border-slate-200 p-2 rounded-lg">
+                    <div class="text-base font-black text-slate-900">24+</div>
+                    <div class="text-[9.5px] font-bold text-slate-500 uppercase tracking-tight">Live SaaS Deployments</div>
+                  </div>
+                  <div class="bg-slate-50 border border-slate-200 p-2 rounded-lg">
+                    <div class="text-base font-black text-slate-900">10k+</div>
+                    <div class="text-[9.5px] font-bold text-slate-500 uppercase tracking-tight">Active Mod Users</div>
+                  </div>
+                  <div class="bg-slate-50 border border-slate-200 p-2 rounded-lg">
+                    <div class="text-base font-black text-slate-900">40%</div>
+                    <div class="text-[9.5px] font-bold text-slate-500 uppercase tracking-tight">Velocity Boost</div>
+                  </div>
+                  <div class="bg-slate-50 border border-slate-200 p-2 rounded-lg">
+                    <div class="text-base font-black text-slate-900">99.9%</div>
+                    <div class="text-[9.5px] font-bold text-slate-500 uppercase tracking-tight">Uptime Standard</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education & Degree -->
+              <div class="space-y-1.5 cv-item-break">
+                <div class="flex items-center gap-2 border-b border-slate-300 pb-1">
+                  <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
+                  <h2 class="text-xs font-black text-slate-900 tracking-wider uppercase">Education</h2>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 p-2.5 rounded-lg space-y-1 text-xs">
+                  <div class="font-bold text-slate-900 leading-snug">Bachelor of Engineering (B.E.)</div>
+                  <div class="text-[11px] font-semibold text-amber-700">Electronic &amp; Computer Science</div>
+                  <div class="text-[10.5px] text-slate-600">AIKTC • Mumbai University</div>
+                  <div class="flex items-center justify-between text-[10px] text-slate-500 pt-1 border-t border-slate-200">
+                    <span>2022 – 2026</span>
+                    <span class="font-bold text-slate-700">Mumbai, India</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Honors & Awards -->
+              <div class="space-y-1.5 cv-item-break">
+                <div class="flex items-center gap-2 border-b border-slate-300 pb-1">
+                  <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
+                  <h2 class="text-xs font-black text-slate-900 tracking-wider uppercase">Honors &amp; Awards</h2>
+                </div>
+                <div class="space-y-2 text-xs">
+                  <div class="bg-slate-50 border border-slate-200 p-2.5 rounded-lg space-y-1">
+                    <div class="flex items-center gap-1.5 font-bold text-slate-900 text-[11px]">
+                      <i class="fa-solid fa-trophy text-amber-600 text-xs"></i>
+                      <span>Bharat ka Best Brand (2023)</span>
+                    </div>
+                    <p class="text-[10.5px] text-slate-600 leading-snug">The Taj Hotel, Mumbai • Awarded for technical leadership &amp; scalable web platforms at ISRC.</p>
+                  </div>
+
+                  <div class="bg-slate-50 border border-slate-200 p-2.5 rounded-lg space-y-1">
+                    <div class="flex items-center gap-1.5 font-bold text-slate-900 text-[11px]">
+                      <i class="fa-solid fa-award text-amber-600 text-xs"></i>
+                      <span>Global Tech Partner Award</span>
+                    </div>
+                    <p class="text-[10.5px] text-slate-600 leading-snug">Taj Exotica Resort, Dubai • Recognized for Infispark's automation and enterprise systems.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Languages -->
+              <div class="space-y-1 cv-item-break">
+                <div class="flex items-center gap-2 border-b border-slate-300 pb-1">
+                  <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
+                  <h2 class="text-xs font-black text-slate-900 tracking-wider uppercase">Languages</h2>
+                </div>
+                <div class="text-[11px] text-slate-700 space-y-0.5 pt-0.5">
+                  <p>• <strong>English</strong> (Professional Working Proficiency)</p>
+                  <p>• <strong>Hindi &amp; Urdu</strong> (Native Fluency)</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- RIGHT MAIN COLUMN (Executive Profile, Experience, Products) -->
+            <div class="cv-right-col w-full md:w-[65%] space-y-4 flex-grow">
+              
+              <!-- Executive Profile -->
+              <div class="space-y-1.5 cv-item-break">
+                <div class="flex items-center gap-2 border-b border-slate-300 pb-1">
+                  <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
+                  <h2 class="text-xs font-black text-slate-900 tracking-wider uppercase">Executive Profile</h2>
+                </div>
+                <p class="text-[12px] text-slate-700 leading-relaxed text-justify">
+                  High-velocity <strong>Chief Technology Officer (CTO)</strong> and <strong>Full-Stack Product Architect</strong> with proven leadership in designing mission-critical cloud software, enterprise healthcare infrastructure, and automated data pipelines. Architected and scaled the <strong>Infiplus Healthcare Suite</strong> (Infiplus HMS, Infiplus OPD, Infiplus Lab), powering <strong>24+ live institutional healthcare deployments</strong> across hospitals, clinics, and diagnostic centers with zero critical downtime. Deep technical mastery in Next.js, React, Supabase, PostgreSQL, Node.js, and Docker, complemented by elite capabilities in low-level Android reverse engineering (Smali/DEX) and web automation. Recognized internationally with honors at Taj Exotica Dubai and The Taj Hotel Mumbai for technical excellence.
                 </p>
               </div>
 
-              <div class="bg-slate-50 border border-slate-200 p-2.5 rounded-lg space-y-1">
-                <div class="font-bold text-slate-900 flex items-center gap-1.5">
-                  <i class="fa-solid fa-database text-amber-600"></i>
-                  <span>Backend, Database &amp; Security</span>
+              <!-- Professional Experience -->
+              <div class="space-y-3.5 cv-item-break">
+                <div class="flex items-center gap-2 border-b border-slate-300 pb-1">
+                  <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
+                  <h2 class="text-xs font-black text-slate-900 tracking-wider uppercase">Professional Leadership Experience</h2>
                 </div>
-                <p class="text-[11.5px] text-slate-600 leading-snug">
-                  Supabase, PostgreSQL (Advanced Schemas, Row Level Security / RLS), Node.js, Express, Firebase, Redis, Multi-Tenant HIPAA Data Isolation.
-                </p>
+
+                <!-- Role 1: CTO @ Infispark -->
+                <div class="space-y-1.5 cv-item-break">
+                  <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                    <div>
+                      <h3 class="text-xs sm:text-sm font-extrabold text-slate-950">Chief Technology Officer (CTO)</h3>
+                      <p class="text-[11.5px] font-bold text-amber-700">Infispark • Enterprise SaaS Products &amp; Global Solutions</p>
+                    </div>
+                    <div class="text-left sm:text-right flex-shrink-0">
+                      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-slate-950 text-amber-400 font-mono">
+                        2023 – Present
+                      </span>
+                      <p class="text-[10px] text-slate-500">BKC, Mumbai, India</p>
+                    </div>
+                  </div>
+                  <ul class="text-[11.5px] text-slate-700 space-y-1 list-disc list-inside leading-relaxed">
+                    <li>Direct full-stack technology strategy, cloud architecture, and engineering execution across all SaaS platforms and enterprise clients.</li>
+                    <li>Architected and launched <strong>Infiplus HMS</strong> (Hospital Management System), an enterprise paperless suite with 8 modules: OPD/IPD workflows, Pathology Blood &amp; X-ray testing, Dental Management, Clinic Solutions, and Automated Billing.</li>
+                    <li>Scaled the healthcare suite to <strong>24+ active institutional deployments</strong> across hospitals and diagnostics, maintaining 99.9% uptime and rigorous patient confidentiality.</li>
+                    <li>Engineered multi-tenant PostgreSQL databases in Supabase with granular Row Level Security (RLS) policies guaranteeing strict medical record isolation and sub-100ms queries.</li>
+                    <li>Developed custom high-throughput web automation scrapers, parsing engines, and real-time data pipelines for over 24 global enterprise clients.</li>
+                    <li>Accelerated development and sprint release velocity by 40% through reusable component architecture and modern IDE workflows.</li>
+                  </ul>
+                </div>
+
+                <!-- Role 2: CTO @ ISRC -->
+                <div class="space-y-1.5 cv-item-break pt-2.5 border-t border-slate-100">
+                  <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                    <div>
+                      <h3 class="text-xs sm:text-sm font-extrabold text-slate-950">Chief Technology Officer (CTO)</h3>
+                      <p class="text-[11.5px] font-bold text-amber-700">ISRC • Kuwait &amp; Regional Digital Web Initiatives</p>
+                    </div>
+                    <div class="text-left sm:text-right flex-shrink-0">
+                      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
+                        2023 (8 Months)
+                      </span>
+                      <p class="text-[10px] text-slate-500">Kuwait Operations</p>
+                    </div>
+                  </div>
+                  <ul class="text-[11.5px] text-slate-700 space-y-1 list-disc list-inside leading-relaxed">
+                    <li>Directed website development, digital transformations, and server operations for Kuwait-based international initiatives during undergraduate studies.</li>
+                    <li>Engineered resilient web platforms optimized for fast global loading, internationalization, and secure cloud storage.</li>
+                    <li>Honored with the <strong>Bharat ka Best Brand Award</strong> at The Taj Hotel, Mumbai (2023) for technical excellence and innovative scalable web architectures.</li>
+                  </ul>
+                </div>
+
+                <!-- Role 3: Freelance Software Developer -->
+                <div class="space-y-1 cv-item-break pt-2 border-t border-slate-100">
+                  <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                    <div>
+                      <h3 class="text-xs sm:text-sm font-extrabold text-slate-950">Freelance Full-Stack Developer</h3>
+                      <p class="text-[11.5px] font-bold text-amber-700">Commercial Booking Engines &amp; Business Software</p>
+                    </div>
+                    <div class="text-left sm:text-right flex-shrink-0">
+                      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
+                        2018 – 2020
+                      </span>
+                      <p class="text-[10px] text-slate-500">Mumbai, India</p>
+                    </div>
+                  </div>
+                  <ul class="text-[11.5px] text-slate-700 space-y-1 list-disc list-inside leading-relaxed">
+                    <li>Built custom booking systems and management software for local commercial businesses, including Al-Kashif Enterprises visa and travel tracking portal.</li>
+                    <li>Designed bespoke inventory, point-of-sale, and billing utilities with local offline data caching.</li>
+                  </ul>
+                </div>
               </div>
 
-              <div class="bg-slate-50 border border-slate-200 p-2.5 rounded-lg space-y-1">
-                <div class="font-bold text-slate-900 flex items-center gap-1.5">
-                  <i class="fa-solid fa-server text-amber-600"></i>
-                  <span>DevOps &amp; Infrastructure</span>
+              <!-- Key Architected Platforms & Security Research -->
+              <div class="space-y-2 cv-item-break">
+                <div class="flex items-center gap-2 border-b border-slate-300 pb-1">
+                  <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
+                  <h2 class="text-xs font-black text-slate-900 tracking-wider uppercase">Key Architected Platforms &amp; Security Research</h2>
                 </div>
-                <p class="text-[11.5px] text-slate-600 leading-snug">
-                  Docker Containers, Ubuntu / Linux VPS Administration, Nginx Reverse Proxies, CI/CD Automations, Antigravity IDE, Git / GitHub CI.
-                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                  <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
+                    <div class="font-bold text-slate-900">Infiplus HMS (Paperless Hospital System)</div>
+                    <p class="text-amber-700 text-[10px] font-semibold">Next.js • Supabase • PostgreSQL • Docker</p>
+                    <p class="text-slate-600 text-[11px] leading-snug">Full-scale hospital paperless ERP suite with OPD, IPD, pathology reporting, billing, and automated patient communication. Deployed at 24+ institutions.</p>
+                  </div>
+                  <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
+                    <div class="font-bold text-slate-900">Infiplus OPD &amp; Clinic Suite</div>
+                    <p class="text-amber-700 text-[10px] font-semibold">Doctor Practice Management • Automated Billing</p>
+                    <p class="text-slate-600 text-[11px] leading-snug">Optimized prescription generation, automated follow-up WhatsApp notifications, and multi-department scheduling.</p>
+                  </div>
+                  <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
+                    <div class="font-bold text-slate-900">Android Bytecode Reverse Engineering</div>
+                    <p class="text-amber-700 text-[10px] font-semibold">Smali • DEX Disassembly • Frida • 10k+ Downloads</p>
+                    <p class="text-slate-600 text-[11px] leading-snug">Reverse-engineered popular social apps (Instagram, Snapchat, YouTube) implementing bytecode modifications for stealth privacy and background playback.</p>
+                  </div>
+                  <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
+                    <div class="font-bold text-slate-900">Smart Study &amp; AIKTC Academic Suite</div>
+                    <p class="text-amber-700 text-[10px] font-semibold">Academic Cloud Storage • Timetables &amp; Notes</p>
+                    <p class="text-slate-600 text-[11px] leading-snug">Full-stack student collaborative portal with past-year papers, question banks, and timetable management.</p>
+                  </div>
+                </div>
               </div>
 
-              <div class="bg-slate-50 border border-slate-200 p-2.5 rounded-lg space-y-1">
-                <div class="font-bold text-slate-900 flex items-center gap-1.5">
-                  <i class="fa-solid fa-shield-halved text-amber-600"></i>
-                  <span>Systems &amp; Reverse Engineering</span>
-                </div>
-                <p class="text-[11.5px] text-slate-600 leading-snug">
-                  Dalvik Bytecode Disassembly (Smali/DEX Patching), Android Security Auditing, APK Modification, Web Scraping (Playwright, Puppeteer, Python Selenium).
-                </p>
-              </div>
             </div>
           </div>
 
-          <!-- Section: Professional Leadership Experience -->
-          <div class="space-y-3 cv-item-break">
-            <div class="flex items-center gap-2 border-b border-slate-200 pb-1">
-              <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
-              <h2 class="text-xs sm:text-sm font-black text-slate-900 tracking-wider uppercase">Professional Leadership Experience</h2>
-            </div>
-
-            <!-- Role 1: CTO @ Infispark -->
-            <div class="space-y-1.5 cv-item-break">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                <div>
-                  <h3 class="text-xs sm:text-sm font-extrabold text-slate-900">Chief Technology Officer (CTO)</h3>
-                  <p class="text-[11.5px] font-bold text-amber-700">Infispark • Global Client Solutions &amp; SaaS Products</p>
-                </div>
-                <div class="text-left sm:text-right">
-                  <span class="inline-flex items-center px-2 py-0.5 rounded text-[10.5px] font-black uppercase tracking-wider bg-slate-900 text-amber-400 border border-slate-800 font-mono">
-                    2023 – Present
-                  </span>
-                  <p class="text-[10.5px] text-slate-500">BKC, Mumbai, India</p>
-                </div>
-              </div>
-              <ul class="text-[12px] text-slate-700 space-y-1 list-disc list-inside leading-relaxed">
-                <li>Direct technical architecture, systems design, and engineering delivery across all client platforms and proprietary SaaS products.</li>
-                <li>Architected and shipped <strong>Infiplus HMS</strong> (Hospital Management System), an enterprise paperless platform featuring 8 mission-critical modules: OPD/IPD workflows, Pathology Blood &amp; X-ray testing, Dental Management, Clinic Solutions, and Automated Billing.</li>
-                <li>Scaled the healthcare suite to <strong>24+ active production deployments</strong> across medical institutions with zero critical outages.</li>
-                <li>Engineered bespoke high-throughput web automation scrapers, parsing engines, and real-time data pipelines for over 24 global enterprise clients.</li>
-                <li>Designed robust multi-tenant PostgreSQL schemas in Supabase with strict Row Level Security (RLS) policies guaranteeing data privacy and rapid querying.</li>
-                <li>Accelerated feature development velocity by 40% through reusable component architecture and modern IDE tooling.</li>
-              </ul>
-            </div>
-
-            <!-- Role 2: CTO @ ISRC -->
-            <div class="space-y-1.5 cv-item-break pt-2 border-t border-slate-100">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                <div>
-                  <h3 class="text-xs sm:text-sm font-extrabold text-slate-900">Chief Technology Officer (CTO)</h3>
-                  <p class="text-[11.5px] font-bold text-amber-700">ISRC • Kuwait &amp; Regional Digital Web Initiatives</p>
-                </div>
-                <div class="text-left sm:text-right">
-                  <span class="inline-flex items-center px-2 py-0.5 rounded text-[10.5px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
-                    2023 (8 Months)
-                  </span>
-                  <p class="text-[10.5px] text-slate-500">Kuwait &amp; Regional Operations</p>
-                </div>
-              </div>
-              <ul class="text-[12px] text-slate-700 space-y-1 list-disc list-inside leading-relaxed">
-                <li>Directed website development, digital transformations, and server operations for Kuwait-based international initiatives during undergraduate studies.</li>
-                <li>Engineered resilient web platforms optimized for fast global loading, internationalization, and secure cloud storage.</li>
-                <li>Honored with the <strong>Bharat ka Best Brand Award</strong> at The Taj Hotel, Mumbai (2023) for technical excellence and innovative scalable web architectures.</li>
-              </ul>
-            </div>
-
-            <!-- Role 3: Freelance Software Developer -->
-            <div class="space-y-1 cv-item-break pt-2 border-t border-slate-100">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                <div>
-                  <h3 class="text-xs sm:text-sm font-extrabold text-slate-900">Freelance Full-Stack Developer</h3>
-                  <p class="text-[11.5px] font-bold text-amber-700">Commercial Booking Engines &amp; Business Software</p>
-                </div>
-                <div class="text-left sm:text-right">
-                  <span class="inline-flex items-center px-2 py-0.5 rounded text-[10.5px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
-                    2018 – 2020
-                  </span>
-                  <p class="text-[10.5px] text-slate-500">Mumbai, India</p>
-                </div>
-              </div>
-              <ul class="text-[12px] text-slate-700 space-y-1 list-disc list-inside leading-relaxed">
-                <li>Built custom software and booking engines for local businesses, including Al-Kashif Enterprises visa and travel tracking system.</li>
-                <li>Developed bespoke inventory, point-of-sale, and billing desktop &amp; web utilities with offline caching support.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Section: Flagship Architected Products & Research -->
-          <div class="space-y-2 cv-item-break">
-            <div class="flex items-center gap-2 border-b border-slate-200 pb-1">
-              <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
-              <h2 class="text-xs sm:text-sm font-black text-slate-900 tracking-wider uppercase">Key Architected Platforms &amp; Security Research</h2>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
-              <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg space-y-0.5">
-                <div class="font-bold text-slate-900">Infiplus HMS (Paperless Hospital System)</div>
-                <p class="text-amber-700 text-[10.5px] font-semibold">Next.js • Supabase • PostgreSQL • Docker</p>
-                <p class="text-slate-600 text-[11.5px] leading-snug">Full-scale hospital paperless ERP suite with OPD, IPD, pathology reporting, billing, and automated patient communication. Deployed at 24+ institutions.</p>
-              </div>
-              <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg space-y-0.5">
-                <div class="font-bold text-slate-900">Infiplus OPD &amp; Clinic Suite</div>
-                <p class="text-amber-700 text-[10.5px] font-semibold">Doctor Practice Management • Automated Billing</p>
-                <p class="text-slate-600 text-[11.5px] leading-snug">Optimized prescription generation, automated follow-up WhatsApp notifications, and multi-department scheduling.</p>
-              </div>
-              <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg space-y-0.5">
-                <div class="font-bold text-slate-900">Android Bytecode Reverse Engineering</div>
-                <p class="text-amber-700 text-[10.5px] font-semibold">Smali • DEX Disassembly • Frida • 10,000+ Downloads</p>
-                <p class="text-slate-600 text-[11.5px] leading-snug">Reverse-engineered popular social apps (Instagram, Snapchat, YouTube) implementing bytecode modifications for stealth privacy and background playback.</p>
-              </div>
-              <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg space-y-0.5">
-                <div class="font-bold text-slate-900">Smart Study &amp; AIKTC Academic Suite</div>
-                <p class="text-amber-700 text-[10.5px] font-semibold">Academic Cloud Storage • Timetables &amp; Notes</p>
-                <p class="text-slate-600 text-[11.5px] leading-snug">Full-stack student collaborative portal with past-year papers, question banks, and timetable management.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Section: Education & Academics -->
-          <div class="space-y-2 cv-item-break">
-            <div class="flex items-center gap-2 border-b border-slate-200 pb-1">
-              <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
-              <h2 class="text-xs sm:text-sm font-black text-slate-900 tracking-wider uppercase">Education &amp; Academics</h2>
-            </div>
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-              <div>
-                <h3 class="text-xs sm:text-sm font-bold text-slate-900">Bachelor of Engineering (B.E.) in Electronic &amp; Computer Science</h3>
-                <p class="text-[11.5px] text-slate-600">Anjuman-I-Islam's Kalsekar Technical Campus (AIKTC) • Mumbai University</p>
-                <p class="text-[11px] text-slate-500 pt-0.5">Focus areas: Distributed Systems, Mobile &amp; Network Security, Database Architecture, Cloud Computing.</p>
-              </div>
-              <div class="text-left sm:text-right flex-shrink-0">
-                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10.5px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
-                  2022 – 2026 (Completed)
-                </span>
-                <p class="text-[10.5px] text-slate-500">Mumbai, India</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Section: Honors & International Awards -->
-          <div class="space-y-2 cv-item-break">
-            <div class="flex items-center gap-2 border-b border-slate-200 pb-1">
-              <span class="w-1.5 h-3.5 bg-amber-500 rounded-sm"></span>
-              <h2 class="text-xs sm:text-sm font-black text-slate-900 tracking-wider uppercase">Honors &amp; Recognitions</h2>
-            </div>
-            <div class="space-y-1.5 text-xs">
-              <div class="flex items-start gap-2">
-                <i class="fa-solid fa-award text-amber-500 mt-0.5 text-sm"></i>
-                <div>
-                  <div class="font-bold text-slate-900">Global Technology Partner Award — Taj Exotica Resort, Dubai</div>
-                  <p class="text-slate-600 text-[11.5px]">Recognized for Infispark's innovative IT engineering solutions, custom web automation tools, and strategic international partnerships.</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-2">
-                <i class="fa-solid fa-trophy text-amber-500 mt-0.5 text-sm"></i>
-                <div>
-                  <div class="font-bold text-slate-900">Bharat ka Best Brand Award — The Taj Hotel, Mumbai (2023)</div>
-                  <p class="text-slate-600 text-[11.5px]">Awarded for excellence in technical leadership, digital transformation, and scalable web architecture at ISRC.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bottom Verification & Print Timestamp -->
-          <div class="border-t border-slate-200 pt-3 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10.5px] text-slate-500 cv-item-break">
+          <!-- Bottom Verification Bar -->
+          <div class="border-t-2 border-slate-900 pt-3 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10.5px] text-slate-500 cv-item-break">
             <div>
-              <span>Official Executive CV • Shaikh Mudassir</span>
+              <span class="font-bold text-slate-800">Official Executive CV</span>
               <span class="mx-1">•</span>
-              <a href="https://mudassir.infispark.in" target="_blank" class="text-slate-900 hover:text-amber-600 font-bold">mudassir.infispark.in</a>
+              <span>Shaikh Mudassir</span>
+              <span class="mx-1">•</span>
+              <a href="https://mudassir.infispark.in" target="_blank" class="text-slate-950 hover:text-amber-600 font-bold">mudassir.infispark.in</a>
             </div>
             <div class="flex items-center gap-3">
-              <a href="https://github.com/infisparks" target="_blank" class="hover:text-slate-900 inline-flex items-center gap-1 font-semibold">
-                <i class="fa-brands fa-github text-slate-800"></i> infisparks
+              <a href="https://github.com/infisparks" target="_blank" class="hover:text-slate-950 inline-flex items-center gap-1 font-semibold text-slate-700">
+                <i class="fa-brands fa-github text-slate-900"></i> infisparks
               </a>
               <span>•</span>
-              <a href="https://www.linkedin.com/in/shaikh-mudassir-4a90a6274" target="_blank" class="hover:text-amber-600 inline-flex items-center gap-1 font-semibold">
+              <a href="https://www.linkedin.com/in/shaikh-mudassir-4a90a6274" target="_blank" class="hover:text-amber-600 inline-flex items-center gap-1 font-semibold text-slate-700">
                 <i class="fa-brands fa-linkedin text-amber-600"></i> shaikh-mudassir
               </a>
             </div>
@@ -2674,7 +2765,7 @@
           filename: 'Shaikh_Mudassir_Executive_CV_A4.pdf',
           image: { type: 'png' }, // Lossless PNG prevents JPEG compression blur!
           html2canvas: { 
-            scale: 3.5, // 3.5x high-res supersampling for sharp crisp rendering
+            scale: 4, // 4x high-res supersampling for razor sharp rendering
             useCORS: true, 
             logging: false,
             letterRendering: true,
