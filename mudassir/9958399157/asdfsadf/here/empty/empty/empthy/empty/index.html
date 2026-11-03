@@ -339,6 +339,30 @@
         width: 65% !important;
         flex-grow: 1 !important;
       }
+      .cv-header-flex {
+        flex-direction: row !important;
+        align-items: center !important;
+        text-align: left !important;
+      }
+      .cv-header-details {
+        align-items: flex-start !important;
+        text-align: left !important;
+      }
+      .cv-header-details * {
+        text-align: left !important;
+        justify-content: flex-start !important;
+      }
+      .cv-header-avatar {
+        order: 2 !important;
+        margin: 0 !important;
+      }
+      .cv-contact-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        text-align: left !important;
+      }
+      .cv-contact-item {
+        justify-content: flex-start !important;
+      }
       .cv-no-print {
         display: none !important;
       }
@@ -2340,18 +2364,18 @@
           
           <!-- CV Header (Executive Identity, Title & Comprehensive Contact Grid) -->
           <div class="border-b-2 border-slate-900 pb-4 space-y-3 cv-item-break">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div class="space-y-1.5 flex-1">
-                <div class="flex flex-wrap items-center gap-2.5">
+            <div class="cv-header-flex flex flex-col sm:flex-row sm:items-center justify-between gap-4 items-center sm:items-start text-center sm:text-left">
+              <div class="cv-header-details space-y-1.5 flex-1 w-full flex flex-col items-center sm:items-start">
+                <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
                   <h1 class="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight uppercase">Shaikh Mudassir</h1>
                   <span class="px-2.5 py-0.5 rounded-md text-[11px] font-black uppercase tracking-wider bg-slate-950 text-amber-400 border border-slate-800 font-mono shadow-sm">
                     CTO • TECH ARCHITECT
                   </span>
                 </div>
-                <p class="text-xs sm:text-sm font-bold text-amber-700 tracking-wider uppercase">
+                <p class="text-xs sm:text-sm font-bold text-amber-700 tracking-wider uppercase text-center sm:text-left">
                   Chief Technology Officer (CTO) • Full-Stack Engineer &amp; Product Architect
                 </p>
-                <div class="flex flex-wrap items-center gap-2 pt-0.5">
+                <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 pt-0.5">
                   <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10.5px] font-bold bg-slate-100 text-slate-800 border border-slate-200">
                     <i class="fa-solid fa-hospital text-amber-600 text-[10px]"></i> 24+ Live Healthcare Deployments
                   </span>
@@ -2365,37 +2389,37 @@
               </div>
 
               <!-- Executive Avatar -->
-              <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-amber-500/80 shadow-md flex-shrink-0 bg-slate-900">
+              <div class="cv-header-avatar w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-amber-500/80 shadow-md flex-shrink-0 bg-slate-900 mx-auto sm:mx-0 order-first sm:order-last">
                 <img src="./image/profile.png" alt="Shaikh Mudassir" class="w-full h-full object-cover" />
               </div>
             </div>
 
             <!-- Contact & Verified Profiles Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 pt-2 border-t border-slate-200 text-xs text-slate-700 font-medium">
-              <div class="flex items-center gap-2">
+            <div class="cv-contact-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 pt-2 border-t border-slate-200 text-xs text-slate-700 font-medium">
+              <div class="cv-contact-item flex items-center justify-center sm:justify-start gap-2">
                 <i class="fa-solid fa-location-dot text-amber-600 w-3.5 text-center"></i>
                 <span>BKC, Mumbai, Maharashtra, India</span>
               </div>
-              <div class="flex items-center gap-2">
+              <div class="cv-contact-item flex items-center justify-center sm:justify-start gap-2">
                 <i class="fa-solid fa-phone text-amber-600 w-3.5 text-center"></i>
                 <a href="https://wa.me/919958399157" target="_blank" class="hover:text-amber-600 font-bold text-slate-900">+91 9958399157 (WhatsApp)</a>
               </div>
-              <div class="flex items-center gap-2">
+              <div class="cv-contact-item flex items-center justify-center sm:justify-start gap-2">
                 <i class="fa-solid fa-globe text-amber-600 w-3.5 text-center"></i>
                 <a href="https://mudassir.infispark.in" target="_blank" class="hover:text-amber-600 font-bold text-slate-900">mudassir.infispark.in</a>
               </div>
-              <div class="flex items-center gap-2">
+              <div class="cv-contact-item flex items-center justify-center sm:justify-start gap-2">
                 <i class="fa-solid fa-building text-amber-600 w-3.5 text-center"></i>
                 <a href="https://infiplus.in" target="_blank" class="hover:text-amber-600">infiplus.in • infispark.in</a>
               </div>
-              <div class="flex items-center gap-2">
+              <div class="cv-contact-item flex items-center justify-center sm:justify-start gap-2">
                 <i class="fa-brands fa-github text-slate-900 w-3.5 text-center text-sm"></i>
                 <a href="https://github.com/infisparks" target="_blank" rel="noopener noreferrer" class="text-slate-950 hover:text-amber-600 font-bold underline decoration-slate-400 flex items-center gap-1">
                   github.com/infisparks
                   <i class="fa-solid fa-arrow-up-right-from-square text-[8px] text-slate-400"></i>
                 </a>
               </div>
-              <div class="flex items-center gap-2">
+              <div class="cv-contact-item flex items-center justify-center sm:justify-start gap-2">
                 <i class="fa-brands fa-linkedin text-amber-600 w-3.5 text-center text-sm"></i>
                 <a href="https://www.linkedin.com/in/shaikh-mudassir-4a90a6274" target="_blank" rel="noopener noreferrer" class="text-slate-950 hover:text-amber-600 font-bold underline decoration-slate-400 flex items-center gap-1">
                   linkedin.com/in/shaikh-mudassir
